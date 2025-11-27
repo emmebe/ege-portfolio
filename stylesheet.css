@@ -1,0 +1,44 @@
+:root {
+    --primary: #F4D9D2;
+    --secondary: #513C3C;
+    --tertiary: #1c100c;
+}
+
+/* nav bar */
+
+header {
+    background-color: var(--secondary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 10px 10px;
+    height: 32px;
+    position: sticky;
+    border-radius: 5px;
+}
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav a{
+    color: var(--primary);
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+#logomain {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 0;
+    left: 15px;
+}
+
+body{
+    background: #F4D9D2;
+}
