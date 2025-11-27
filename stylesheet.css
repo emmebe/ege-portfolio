@@ -40,5 +40,16 @@ nav a{
 }
 
 body{
-    background: #F4D9D2;
+    background: #fff6ec;
+    color: var(--tertiary);
+}
+
+section {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: solid 2px var(--secondary)
+}
+
+section.top {
+    margin-top: 40px;
 }
