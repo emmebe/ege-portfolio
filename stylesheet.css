@@ -4,6 +4,22 @@
     --tertiary: #1c100c;
 }
 
+/* didnt work
+@font-face {
+    font-family: corinthia;
+    src: url(Corinthia-Regular.ttf);
+    font-weight: normal;
+    font-style: sans-serif;
+}
+
+@font-face {
+    font-family: corinthia;
+    src: url(Corinthia-Bold.ttf);
+    font-weight: bold;
+    font-style: sans-serif;
+}
+*/
+
 /* nav bar */
 
 header {
@@ -18,12 +34,14 @@ header {
     position: sticky;
     border-radius: 5px;
 }
+
 nav {
     display: flex;
     gap: 20px;
     align-items: center;
 }
-nav a{
+
+nav a {
     color: var(--primary);
     text-decoration: none;
     font-family: 'Lato', sans-serif;
@@ -39,7 +57,7 @@ nav a{
     left: 15px;
 }
 
-body{
+body {
     background: var(--primary);
     color: var(--tertiary);
 }
@@ -52,6 +70,10 @@ section {
 
 section.top {
     margin-top: 40px;
+}
+
+h1 {
+    font-family: "corinthia";
 }
 
 .active {
