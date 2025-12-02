@@ -58,3 +58,21 @@ section.top {
     border-bottom: #fff6ec 3px solid;
     border-radius: 3px;
 }
+
+.bubble-container{
+    position: fixed;
+    bottom: 1%;
+    left:1%;
+    background-image: url(contactcollapsed.png);
+    background-size: 77px auto;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 77px;
+}
+
+
+.bubble-container:hover {
+    background-image: url(contacthover.png);
+    background-size: 350px auto;
+    width: 568px;
+}
