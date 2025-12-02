@@ -1,5 +1,5 @@
 :root {
-    --primary: #F4D9D2;
+    --primary: #fff6ec;
     --secondary: #513C3C;
     --tertiary: #1c100c;
 }
@@ -40,7 +40,7 @@ nav a{
 }
 
 body{
-    background: #fff6ec;
+    background: var(--primary);
     color: var(--tertiary);
 }
 
