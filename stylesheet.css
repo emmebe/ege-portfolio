@@ -55,5 +55,6 @@ section.top {
 }
 
 .active {
-    border-bottom: #fff6ec 2px solid;
+    border-bottom: #fff6ec 3px solid;
+    border-radius: 3px;
 }
