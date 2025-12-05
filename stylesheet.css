@@ -74,6 +74,25 @@ section.top {
 
 h1 {
     font-family: "corinthia";
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h1.portfolio-title {
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    margin-bottom: -50px;
+}
+
+h2 {
+    font-family: 'corinthia';
+    font-weight: normal;
+    font-size: 55px
+}
+
+h2.portfolio-name {
+    padding-left: 100px;
 }
 
 .active {
@@ -95,6 +114,13 @@ h1 {
 
 .bubble-container:hover {
     background-image: url(contacthover.png);
-    background-size: 350px auto;
+    background-size: 372px auto;
     width: 568px;
+    margin-left: 13px;
+}
+
+#titlebox {
+    width: fit-content;
+    position: relative;
+
 }
