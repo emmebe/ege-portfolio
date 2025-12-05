@@ -4,24 +4,6 @@
     --tertiary: #1c100c;
 }
 
-/* didnt work
-@font-face {
-    font-family: corinthia;
-    src: url(Corinthia-Regular.ttf);
-    font-weight: normal;
-    font-style: sans-serif;
-}
-
-@font-face {
-    font-family: corinthia;
-    src: url(Corinthia-Bold.ttf);
-    font-weight: bold;
-    font-style: sans-serif;
-}
-*/
-
-/* nav bar */
-
 header {
     background-color: var(--secondary);
     position: relative;
@@ -104,7 +86,7 @@ h2.portfolio-name {
     position: fixed;
     bottom: 1%;
     left:1%;
-    background-image: url(contactcollapsed.png);
+    background-image: url(imgs/contactcollapsed.png);
     background-size: 77px auto;
     background-repeat: no-repeat;
     width: 95px;
@@ -113,7 +95,7 @@ h2.portfolio-name {
 
 
 .bubble-container:hover {
-    background-image: url(contacthover.png);
+    background-image: url(imgs/contacthover.png);
     background-size: 372px auto;
     width: 568px;
     margin-left: 13px;
