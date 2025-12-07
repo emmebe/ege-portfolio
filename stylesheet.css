@@ -201,24 +201,35 @@ input, textarea {
     box-shadow: 0 1px 0 rgba(0,0,0,0.05) inset;
 }
 
-#leftbox{
+.leftbox{
     border-left: 2px solid var(--tertiary);
 }
-#rightbox{
+.rightbox{
     border-right: 2px solid var(--tertiary);
     border-left: 2px solid var(--tertiary);
 }
 
-#column1 {
+.column1 {
     display: inline-block;
     vertical-align: top;
-    width: 35%;
+    width: 30%;
     margin-right: 5%;
 }
-#column2 {
+.column2 {
     display: inline-block;
     vertical-align: top;
-    width: 35%;
+    width: 30%;
+}
+
+.threecolumn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app {
+    display: block;
+    margin-bottom: 20px;
+    max-width: 40%;
 }
 
 #resume{
