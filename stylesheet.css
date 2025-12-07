@@ -44,12 +44,8 @@ nav a {
 body {
     background: var(--primary);
     color: var(--tertiary);
-}
+    font-family: 'Lato', sans-serif;
 
-section {
-    margin-left: 8.5%;
-    padding-left: 15px;
-    border-left: solid 2px var(--secondary)
 }
 
 section.top {
@@ -69,6 +65,38 @@ h2 {
     font-size: 55px;
     position: static;
 }
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 75%;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid var(--secondary);
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    resize: vertical;
+}
+
+
 
 .portfolio-title {
     position: absolute;
@@ -101,7 +129,6 @@ h2 {
     height: auto;
     border-radius: 1px;
 }
-
 
 .portfolio-name {
     position: absolute;
@@ -139,4 +166,71 @@ h2 {
     background-size: 372px auto;
     width: 568px;
     margin-left: 13px;
+}
+
+.leftline {
+    margin-left: 5%;
+    padding-left: 5%;
+    border-left: solid 2px var(--secondary)
+}
+
+#slideshow {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0;
+    padding: 4px 8px;
+    width: 80%;     /* wider bar */
+    max-width: 900px;
+    color: var(--tertiary);
+}
+
+#slideshow a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: var(--tertiary);
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+#slideshow a.slideactive,
+#slideshow a:hover {
+    background: rgba(81,60,60,0.06);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05) inset;
+}
+
+#leftbox{
+    border-left: 2px solid var(--tertiary);
+}
+#rightbox{
+    border-right: 2px solid var(--tertiary);
+    border-left: 2px solid var(--tertiary);
+}
+
+#column1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+    margin-right: 5%;
+}
+#column2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+
+#resume{
+    display: inline-block;
+}
+
+#footer {
+    height: 60px;
+    margin-top: 50px;
+    border-top: solid 1px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 800px) {
+
 }
