@@ -181,7 +181,7 @@ input, textarea {
     align-items: center;
     margin: 30px auto 0;
     padding: 4px 8px;
-    width: 80%;     /* wider bar */
+    width: 80%;
     max-width: 900px;
     color: var(--tertiary);
 }
@@ -242,6 +242,110 @@ input, textarea {
     border-top: solid 1px rgba(0,0,0,0.5);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 480px) {
+    .column1, .column2 {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    #logomain {
+        width: 80px;
+    }
+    nav a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px) {
+    .portrait-container {
+        margin-top: 40px;
+    }
 
+    .portrait-wrapper {
+        max-width: 280px;
+    }
+
+    #portrait {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .portfolio-title {
+        left: 50%;
+        top: -15%;
+        transform: translate(-50%, -50%);
+        font-size: 34px;
+        -webkit-text-stroke: 1.5px var(--primary);
+    }
+
+    .portfolio-name {
+        left: 50%;
+        top: 82%;
+        transform: translate(-50%, -50%);
+        -webkit-text-stroke: .5px var(--primary);
+        font-size: 35px;
+    }
+
+    #slideshow {
+        width: 100%;
+        max-width: 100%;
+        gap: 8px;
+        margin: 10px auto 0;
+        padding: 6px 8px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #slideshow a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    #slideshow a.slideactive {
+        border-bottom: 2px solid var(--tertiary);
+    }
+
+    #column1, #column2 {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+
+    .leftline {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px solid var(--secondary);
+        padding-top: 12px;
+    }
+
+    header nav {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    #logomain {
+        position: static;
+        width: 64px;
+        height: auto;
+        margin: 0 12px 0 8px;
+        order: 1;
+    }
+    header {
+        justify-content: space-between;
+        padding: 8px 12px;
+        align-items: center;
+    }
+    header nav {
+        order: 2;
+        gap: 10px;
+    }
 }
