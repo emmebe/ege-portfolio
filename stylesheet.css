@@ -175,7 +175,7 @@ input, textarea {
 }
 
 .workpng{
-    max-width: 25%;
+    max-width: 30%;
     max-height:auto;
     height: auto;
     display: block;
@@ -232,7 +232,7 @@ input, textarea {
     display: flex;
     justify-content: space-between;
     max-width: fit-content;
-    left:
+    margin: 5px;
 }
 
 .app {
@@ -269,8 +269,6 @@ input, textarea {
     nav a{
         font-size: 14px;
     }
-}
-@media (max-width: 600px) {
     .portrait-container {
         margin-top: 40px;
     }
