@@ -3,50 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emma Grace Ebeling | Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img id="logomain" src="imgs/logo.png" alt="Logo">
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+    <div class="bg-orb orb-c"></div>
+
+    <header class="site-header glass">
+        <a class="brand" href="#top">
+            <img src="imgs/logo.png" alt="EGE logo">
+            <span>EGE Portfolio</span>
         </a>
         <nav>
-            <a class="active" href="index.html">Home</a>
-            <a href="gamedesign.html">Game Design</a>
-            <a href="infosci.html">Info Sci</a>
-            <a href="otherdesign.html">Other Design</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#interdisciplinary">Interdisciplinary</a>
+            <a href="#credentials">Credentials</a>
+            <a href="#contact">Email</a>
         </nav>
     </header>
-    <a href="contact.html">
-        <div class="bubble-container"></div> 
-    </a>
-    <div id="titlebox">
-        <div class="portrait-container">
-            <div class="portrait-wrapper">
-                <img id="portrait" src="imgs/portrait.png" alt="Portrait">
-                <h1 class="portfolio-title">Portfolio</h1>
-                <h2 class="portfolio-name">Emma Grace Ebeling</h2>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="kicker">Game Design + Information Science</p>
+                <h1>Emma Grace Ebeling</h1>
+                <p>
+                    I design digital experiences rooted in research, storytelling, and interface craft.
+                    This portfolio highlights selected work across game design, information science,
+                    and interdisciplinary Adobe multimedia design.
+                </p>
+                <div class="hero-cta">
+                    <a class="button primary" href="#projects">Explore Projects</a>
+                    <a class="button ghost" href="work/resume.pdf">View Resume PDF</a>
+                </div>
             </div>
-        </div>
-    </div>
-    <nav id="slideshow">
-        <a class="leftbox" class="slideactive" href="index.html">About</a>
-        <a class="leftbox" href="experience.html">Experiences</a>
-        <a class="leftbox" href="resume.html">Resume</a>
-        <a class="rightbox" href="credentials.html">Credentials</a>
-    </nav>
-    <div class="leftline">
-        <section>
-            <h2>About Me</h2>
-            <p class="column1">Nice to meet you. I’m Emma Ebeling, tagged EGE for short. I have a degree in Games and Interactive Media and another in Information Science. Most interestingly, part of my minor in Korean was completed during a study abroad in Korea. <br>
-            <br> I design most forms of digital media and use human behavior analysis and research to inspire my human-centered designs.</p>
-            <p class="column2">I’m experienced in documentation, design, and user research. See my work linked in the pages above. Human behavior inspires my human-centered design approaches in these areas.<br> <br>Game Design: User interaction and interface design.<br>
-            <br>Information Science: Digital media, digital information, and user experience design.<br>
-            <br>Credentials: Academics and experience.<br>
-            <br>Note: I most definitely wouldn't use this as a real portfolio. I would focus on my processes and only show my better works; plus the style would be much more refined and professional. Best!</p>
+            <div class="hero-side">
+                <div class="hero-image glass">
+                    <img src="imgs/portrait.png" alt="Portrait of Emma Grace Ebeling">
+                </div>
+                <section id="credentials" class="glass credentials-top">
+                    <h2>Credentials</h2>
+                    <ul>
+                        <li>BS in Games and Interactive Media</li>
+                        <li>BA in Information Science</li>
+                        <li>Minor in Korean Language and Culture</li>
+                        <li>Study Abroad: Yonsei University, Seoul, South Korea (Summer 2023)</li>
+                    </ul>
+                </section>
+            </div>
         </section>
-    </div>
-    <div id="footer"></div>
+
+        <section id="about" class="glass section-block">
+            <h2>About Me</h2>
+            <p>
+                Nice to meet you. I am Emma Ebeling, tagged EGE for short. I have a BS in Games and
+                Interactive Media and a BA in Information Science. Most interestingly, part of my minor
+                in Korean Language and Culture was completed during a study abroad at Yonsei University
+                in Seoul, South Korea.
+            </p>
+            <p>
+                I design most forms of digital media and use human behavior analysis and research to
+                inspire my human-centered designs. I am experienced in documentation, design, and user
+                research, with work spanning interaction design, digital information, and experience design.
+            </p>
+        </section>
+
+        <section id="projects" class="section-stack">
+            <h2>Project Library</h2>
+            <p class="section-intro">
+                Placeholder tiles are set up so you can keep uploading and swapping in finished
+                thumbnails, videos, and case studies over time.
+            </p>
+
+            <h3>Game Design</h3>
+            <div class="card-grid">
+                <article class="project-card glass">
+                    <div class="placeholder shape-circle"></div>
+                    <h4>Game Design Documentation</h4>
+                    <p>Pitching, systems framing, and design rationale artifacts.</p>
+                    <a href="work/gamedes/pitchdoc.pdf">Open sample PDF</a>
+                </article>
+                <article class="project-card glass">
+                    <div class="placeholder shape-hex"></div>
+                    <h4>Game Writing Wireframing</h4>
+                    <p>Narrative and interaction flow planning for player-facing writing systems.</p>
+                    <a href="work/gamedes/finaldiagrams.drawio.html" target="_blank" rel="noopener noreferrer">Open sample diagram</a>
+                </article>
+                <article class="project-card glass">
+                    <div class="placeholder shape-pill"></div>
+                    <h4>Menu and UI Design</h4>
+                    <p>Menu architecture and visual hierarchy for game interfaces.</p>
+                    <a href="work/gamedes/menudes.pdf">Open sample PDF</a>
+                </article>
+            </div>
+
+            <h3>Information Science</h3>
+            <div class="card-grid">
+                <article class="project-card glass">
+                    <div class="placeholder shape-square"></div>
+                    <h4>App Prototypes and Designs</h4>
+                    <p>Figma and Swift-oriented prototyping for mobile experiences.</p>
+                    <a href="https://embed.figma.com/design/xSVUdZCExrlfHfoF7GkbnR/Evergreen-team-library?node-id=411-152&embed-host=share" target="_blank" rel="noopener noreferrer">Open Figma prototype</a>
+                </article>
+                <article class="project-card glass">
+                    <div class="placeholder shape-diamond"></div>
+                    <h4>Web Design and Prototypes</h4>
+                    <p>Website architecture and usability-centered prototyping workflows.</p>
+                    <a href="https://embed.figma.com/design/qhhirFMXZQq0FCTD0d2YRu/MyndBodyPrototypeImproved?node-id=1-70&embed-host=share" target="_blank" rel="noopener noreferrer">Open web/app prototype</a>
+                </article>
+                <article class="project-card glass">
+                    <div class="placeholder shape-arch"></div>
+                    <h4>E-Info Design (Newsletters)</h4>
+                    <p>Digital information design for communication campaigns.</p>
+                    <a href="work/infosci/newsletter.png">Open sample image</a>
+                </article>
+                <article class="project-card glass">
+                    <div class="placeholder shape-triangle"></div>
+                    <h4>User Research</h4>
+                    <p>Research synthesis and data-informed recommendations.</p>
+                    <a href="work/infosci/dataanalysis.pdf">Open sample PDF</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="interdisciplinary" class="section-stack">
+            <h2>Interdisciplinary Adobe Multimedia Designs</h2>
+            <div class="card-grid">
+                <article class="project-card glass">
+                    <img src="work/otherdes/Newspaper-EmmaEbeling.png" alt="Newspaper design sample">
+                    <h4>Editorial and Publication Layouts</h4>
+                </article>
+                <article class="project-card glass">
+                    <img src="work/otherdes/EmmaEbeling.BookCover.png" alt="Book cover design sample">
+                    <h4>Book and Magazine Covers</h4>
+                </article>
+                <article class="project-card glass">
+                    <img src="work/otherdes/SocialMediaPost-EmmaEbeling.png" alt="Social media graphic sample">
+                    <h4>Digital Campaign Graphics</h4>
+                </article>
+                <article class="project-card glass">
+                    <img src="work/otherdes/PieChart-Ebeling.png" alt="Pie chart design sample">
+                    <h4>Information Visualization</h4>
+                </article>
+                <article class="project-card glass">
+                    <img src="work/otherdes/MagCoverEmmaEbeling.jpg" alt="Magazine cover sample">
+                    <h4>Branding and Print Visuals</h4>
+                </article>
+                <article class="project-card glass">
+                    <div class="placeholder shape-plus"></div>
+                    <h4>Add New Adobe Project</h4>
+                    <p>Use this card style for your next upload.</p>
+                </article>
+            </div>
+            <p><a href="work/otherdes/Menu-EmmaEbeling.pdf">View Adobe menu design PDF</a></p>
+        </section>
+
+        <section id="contact" class="glass section-block">
+            <h2>Email</h2>
+            <p>
+                Reach me directly at
+                <a href="mailto:ebelinge@msu.edu">ebelinge@msu.edu</a>.
+            </p>
+        </section>
+    </main>
 </body>
 </html>
