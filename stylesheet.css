@@ -107,15 +107,22 @@ a:hover {
 
 .site-header nav {
     display: flex;
-    gap: 18px;
+    gap: 10px 20px;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .site-header nav a {
-    color: var(--text);
-    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
     font-weight: 600;
+    white-space: nowrap;
 }
+
+.site-header nav a:hover {
+    color: var(--accent);
+}
+
 
 main {
     width: min(1120px, calc(100% - 32px));
@@ -268,6 +275,7 @@ h3 {
 }
 
 .card-preview {
+    position: relative;
     width: 100%;
     height: 200px;
     border-radius: 10px;
@@ -457,7 +465,32 @@ a.card-preview:hover {
     border-color: rgba(189, 246, 220, 0.45);
 }
 
-a.card-preview iframe {
+.card-preview-stretch {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+}
+
+.card-preview iframe {
+    pointer-events: none;
+}
+
+.card-preview--figma::after,
+.card-preview--site::after {
+    content: "Preview — open project for full view";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    z-index: 1;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-muted);
+    background: rgba(4, 28, 19, 0.82);
+    padding: 4px 6px;
+    border-radius: 6px;
     pointer-events: none;
 }
 
