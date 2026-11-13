@@ -440,15 +440,20 @@ a:focus-visible {
 }
 
 .work-card__visual--image,
-.work-card__visual--logo { display: block; }
+.work-card__visual--logo,
+.work-card__visual--preview { display: block; }
 .work-card__visual--image img,
 .work-card__visual--logo img { width: 100%; height: 100%; min-height: 205px; object-fit: cover; }
+.work-card__visual--preview iframe { display: block; width: 100%; height: 205px; border: 0; pointer-events: none; }
+.work-card__preview-link { position: absolute; z-index: 2; inset: 0; }
+.work-card__visual--preview .visual-caption { z-index: 3; pointer-events: none; }
 .work-card__visual--logo { background: #f0eee9; }
 .work-card__visual--logo img { padding: 22px; object-fit: contain; }
 .work-card__visual--image::before,
 .work-card__visual--logo::before { z-index: 1; pointer-events: none; }
 .work-card__visual--image::after,
-.work-card__visual--logo::after { z-index: 1; pointer-events: none; }
+.work-card__visual--logo::after,
+.work-card__visual--preview::after { z-index: 1; pointer-events: none; }
 
 .visual-caption {
     position: absolute;
