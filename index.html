@@ -3,402 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Grace Ebeling | Portfolio</title>
+    <meta name="theme-color" content="#18191e">
+    <meta name="description" content="The portfolio of Emma Grace Ebeling: UI/UX, web and app design, graphic design, art, and game design.">
+    <title>Emma Grace Ebeling | Designer &amp; Creative</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
-    <div class="bg-orb orb-a"></div>
-    <div class="bg-orb orb-b"></div>
-    <div class="bg-orb orb-c"></div>
-
-    <header class="site-header glass">
-        <a class="brand" href="#top">
-            <img src="imgs/logo.png" alt="EGE logo">
-            <span>EGE Portfolio</span>
+<body class="home-page">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Emma Grace Ebeling, home">
+            <img src="imgs/logo.png" alt="">
+            <span>Emma Grace Ebeling</span>
         </a>
-        <nav aria-label="Main">
+        <nav class="site-nav" aria-label="Main navigation">
             <a href="#about">About</a>
-            <a href="#projects">Work</a>
-            <a href="education-resume.html" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="uiux-design.html">UI/UX + Web</a>
+            <a href="graphic-design.html">Graphic + Art</a>
+            <a href="game-design.html">Game Design</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main id="top">
-        <section class="hero">
-            <div class="hero-copy">
-                <p class="kicker">Designer / researcher / storyteller</p>
-                <h1>Emma Grace Ebeling</h1>
-                <p class="hero-lede">
-                    I make digital experiences clearer, more useful, and more human through research, interaction design, and visual storytelling.
-                </p>
-                <div class="hero-meta" aria-label="Professional focus">
-                    <span>Game design</span>
-                    <span>UX &amp; information science</span>
-                    <span>Open to thoughtful collaboration</span>
-                </div>
-                <div class="hero-cta">
-                    <a class="button primary" href="#projects">Explore Projects</a>
-                    <a class="button ghost" href="education-resume.html" target="_blank" rel="noopener noreferrer">Resume</a>
-                    <a class="button ghost" href="work-history.html" target="_blank" rel="noopener noreferrer">Work History</a>
-                </div>
-            </div>
-            <div class="hero-side">
-                <div class="hero-image glass">
+        <section class="intro-layout" aria-labelledby="intro-title">
+            <aside class="portrait-column">
+                <figure class="portrait-frame">
                     <img src="imgs/portrait.png" alt="Portrait of Emma Grace Ebeling">
+                    <figcaption><span>EG</span><span>Designer &amp; maker</span></figcaption>
+                </figure>
+                <div class="document-links" aria-label="Professional documents">
+                    <a class="document-link" href="work/eduworkresume.pdf" target="_blank" rel="noopener noreferrer">
+                        <span class="document-link__label">Resume</span>
+                        <span class="document-link__icon" aria-hidden="true">↗</span>
+                    </a>
+                    <a class="document-link" href="work/workhistory.pdf" target="_blank" rel="noopener noreferrer">
+                        <span class="document-link__label">CV</span>
+                        <span class="document-link__icon" aria-hidden="true">↗</span>
+                    </a>
                 </div>
-                <section id="credentials" class="glass credentials-top">
-                    <h2>Credentials</h2>
-                    <ul>
-                        <li>BA in Games and Interactive Media</li>
-                        <li>BA in Information Science</li>
-                        <li>Minor in Korean Language and Culture</li>
-                        <li>Study Abroad: Yonsei University, Seoul, South Korea (Summer 2023)</li>
-                    </ul>
-                </section>
+            </aside>
+
+            <div class="intro-copy">
+                <p class="eyebrow"><span class="eyebrow__mark"></span> Portfolio / 2026</p>
+                <h1 id="intro-title">Emma Grace <span>Ebeling</span></h1>
+                <p class="intro-lede">Designing digital experiences with clarity, curiosity, and care.</p>
+
+                <nav class="field-links" aria-label="Explore my fields">
+                    <a class="field-link field-link--ux" href="uiux-design.html">
+                        <span class="field-link__number">01</span>
+                        <span class="field-link__title">UI/UX, Web &amp; App Design</span>
+                        <span class="field-link__arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a class="field-link field-link--graphic" href="graphic-design.html">
+                        <span class="field-link__number">02</span>
+                        <span class="field-link__title">Graphic Design &amp; Art</span>
+                        <span class="field-link__arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a class="field-link field-link--game" href="game-design.html">
+                        <span class="field-link__number">03</span>
+                        <span class="field-link__title">Game Design &amp; Development</span>
+                        <span class="field-link__arrow" aria-hidden="true">↗</span>
+                    </a>
+                </nav>
+
+                <div class="professional-note">
+                    <p class="eyebrow">My practice</p>
+                    <p>I make digital experiences clearer, more useful, and more human through research, interaction design, and visual storytelling. I’m drawn to thoughtful products where accessible systems and strong stories meet.</p>
+                </div>
             </div>
         </section>
 
-        <section id="about" class="glass section-block">
-            <h2>About Me</h2>
-            <p>
-                I’m Emma Grace Ebeling (EGE)—a designer with dual BAs in Games and Interactive Media and Information Science, plus a minor in Korean Language and Culture (including study abroad at Yonsei University, Seoul). I build digital experiences where research, accessibility, and storytelling meet clear interface craft.
-            </p>
-            <p>
-                This portfolio collects selected work: game design documentation, UI/UX prototypes, live web builds, user research, and multimedia design. Each project includes process notes so you can see how I think, not only what I shipped. I’m especially interested in human-centered products—thoughtful flows, legible systems, and design decisions grounded in real user needs.
-            </p>
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div class="section-marker"><span>01</span><span>Introduction</span></div>
+            <div class="about-copy">
+                <p class="eyebrow"></p>about me</p>
+                <h2 id="about-title">Curiosity is part of the process.</h2>
+                <p>I’m Emma Grace Ebeling (EGE), a designer with dual BAs in Games and Interactive Media and Information Science, plus a minor in Korean Language and Culture. My studies also took me to Yonsei University in Seoul.</p>
+                <p>I bring research, accessibility, and storytelling into my design practice—from early ideas and user flows to polished interfaces and visual systems. Explore the field pages for selected projects and process work.</p>
+            </div>
+            <aside class="about-aside">
+                <span class="about-aside__symbol" aria-hidden="true">✳</span>
+                <p>Research-led.<br>People-first.<br>Always learning.</p>
+            </aside>
         </section>
 
-        <section id="projects" class="section-stack">
-            <div class="section-heading">
-                <div>
-                    <p class="kicker">Selected work</p>
-                    <h2>Project Library</h2>
-                </div>
-                <p class="section-heading-note">A cross-disciplinary practice built around clear systems, strong stories, and accessible experiences.</p>
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div>
+                <p class="eyebrow">Have a good one in mind?</p>
+                <h2 id="contact-title">Let’s make something meaningful.</h2>
             </div>
-            <p class="section-intro">
-                Each card links to a full project page with a large viewer and notes on process and value.
-            </p>
-
-            <div id="app-ux" class="glass section-block">
-                <h3>App UI/UX</h3>
-                <p class="section-intro">
-                    Figma prototypes for mobile apps and web—click any project for the full file, process notes, and open-in-Figma link.
-                </p>
-
-                <h4>Mobile App UI/UX</h4>
-                <div class="card-grid">
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--figma">
-                            <iframe src="https://embed.figma.com/design/1NUlqs1ywPWMSnzqCrGBGE/NicNix-Project?node-id=695-2&amp;embed-host=share" title="NicNix app preview" loading="lazy" allowfullscreen></iframe>
-                            <a class="card-preview-stretch" href="projects/nic-nix-app.html" aria-label="View NicNix project"></a>
-                        </div>
-                        <p class="fidelity-pill fidelity-pill--high">High fidelity</p>
-                        <h4>NicNix App</h4>
-                        <p>Full mobile flows with polished UI, interactions, and a reusable component system—ready for dev handoff.</p>
-                        <a class="card-link" href="projects/nic-nix-app.html">View full project</a>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--figma">
-                            <iframe src="https://embed.figma.com/design/36e6EupGJZG4RgHOV9Reff/Commerce-Platform?node-id=0-1&amp;embed-host=share" title="Commerce Platform preview" loading="lazy" allowfullscreen></iframe>
-                            <a class="card-preview-stretch" href="projects/commerce-platform.html" aria-label="View Commerce Platform project"></a>
-                        </div>
-                        <p class="fidelity-pill fidelity-pill--medium">Medium fidelity</p>
-                        <h4>Commerce Platform</h4>
-                        <p>Shopping journeys across browse, product detail, cart, and account—with layout and IA emphasis.</p>
-                        <a class="card-link" href="projects/commerce-platform.html">View full project</a>
-                    </article>
-                </div>
-
-                <h4>Web UI/UX</h4>
-                <div class="card-grid">
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--figma">
-                            <iframe src="https://embed.figma.com/proto/7URxI5CPxpjDaO4FEItjLw/mi349-personal?node-id=3-27&amp;starting-point-node-id=3%3A27&amp;embed-host=share" title="Portfolio website prototype preview" loading="lazy" allowfullscreen></iframe>
-                            <a class="card-preview-stretch" href="projects/mi349-portfolio-figma.html" aria-label="View mi349 portfolio project"></a>
-                        </div>
-                        <p class="fidelity-pill fidelity-pill--high">High fidelity</p>
-                        <h4>Portfolio Website (mi349)</h4>
-                        <p>Personal portfolio site prototype—page structure, typography, and navigation built for recruiter scanning.</p>
-                        <a class="card-link" href="projects/mi349-portfolio-figma.html">View full project</a>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--figma">
-                            <iframe src="https://embed.figma.com/design/6N7soxpVZIIA52kvmg4IgF/D-D-Website?node-id=0-1&amp;embed-host=share" title="D and D website preview" loading="lazy" allowfullscreen></iframe>
-                            <a class="card-preview-stretch" href="projects/dd-website-figma.html" aria-label="View D and D website project"></a>
-                        </div>
-                        <p class="fidelity-pill fidelity-pill--medium">Medium fidelity</p>
-                        <h4>D&amp;D Group Homepage</h4>
-                        <p>Team-built marketing homepage with shared layout system, content sections, and group handoff in Figma.</p>
-                        <a class="card-link" href="projects/dd-website-figma.html">View full project</a>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--figma">
-                            <iframe src="https://embed.figma.com/design/dznkYfLsAfNR9V5tajoXJc/MI449-Final?node-id=0-1&amp;embed-host=share" title="MI449 museum website preview" loading="lazy" allowfullscreen></iframe>
-                            <a class="card-preview-stretch" href="projects/mi449-museum-figma.html" aria-label="View MI449 museum website project"></a>
-                        </div>
-                        <p class="fidelity-pill fidelity-pill--medium">Medium fidelity</p>
-                        <h4>Museum Collection Team Website (Figma)</h4>
-                        <p>Team museum-browser design scoped to dual API integration and a custom collection database.</p>
-                        <a class="card-link" href="projects/mi449-museum-figma.html">View full project</a>
-                    </article>
-                </div>
-
-                <h4 id="websites">Live Website Projects</h4>
-                <p class="section-intro">Deployed sites paired with the web prototypes above—full project pages with live previews.</p>
-                <div class="website-grid">
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--site">
-                            <iframe src="https://museumdivas.netlify.app/" title="Museum Collection App preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
-                            <a class="card-preview-stretch" href="projects/museum-collection-app.html" aria-label="View Museum Collection App"></a>
-                        </div>
-                        <h4>Museum Collection App</h4>
-                        <a class="card-link" href="projects/museum-collection-app.html">View full project</a>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--site">
-                            <iframe src="https://divas-divs.netlify.app/" title="Divas and Divs preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
-                            <a class="card-preview-stretch" href="projects/divas-and-divs.html" aria-label="View Divas and Divs"></a>
-                        </div>
-                        <h4>Divas and Divs</h4>
-                        <a class="card-link" href="projects/divas-and-divs.html">View full project</a>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--site">
-                            <iframe src="https://waystodesigngame.netlify.app/" title="Ways To Slot Machine preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
-                            <a class="card-preview-stretch" href="projects/ways-to-slot-machine.html" aria-label="View Ways To Slot Machine"></a>
-                        </div>
-                        <h4>Ways To Slot Machine</h4>
-                        <a class="card-link" href="projects/ways-to-slot-machine.html">View full project</a>
-                    </article>
-                </div>
-            </div>
-
-            <h3>Game Design</h3>
-            <div class="card-grid">
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--artifact" href="projects/game-design-documentation.html">
-                        <span class="artifact-type">PDF</span>
-                        <span class="artifact-title">Game design pitch &amp; systems doc</span>
-                    </a>
-                    <h4>Game Design Documentation</h4>
-                    <p>Pitching, systems framing, and design rationale artifacts.</p>
-                    <a class="card-link" href="projects/game-design-documentation.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--artifact card-preview--diagram" href="projects/game-writing-wireframing.html">
-                        <span class="artifact-type">Diagram</span>
-                        <span class="artifact-title">Narrative &amp; dialogue flow maps</span>
-                    </a>
-                    <h4>Game Writing Wireframing</h4>
-                    <p>Narrative and interaction flow planning for player-facing writing systems.</p>
-                    <a class="card-link" href="projects/game-writing-wireframing.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--artifact" href="projects/menu-ui-design.html">
-                        <span class="artifact-type">PDF</span>
-                        <span class="artifact-title">Menu layout &amp; UI hierarchy</span>
-                    </a>
-                    <h4>Menu and UI Design</h4>
-                    <p>Menu architecture and visual hierarchy for game interfaces.</p>
-                    <a class="card-link" href="projects/menu-ui-design.html">View full project</a>
-                </article>
-            </div>
-
-            <h3>Information Science</h3>
-            <div class="card-grid">
-                <article class="project-card glass">
-                    <div class="card-preview card-preview--figma">
-                        <iframe src="https://embed.figma.com/design/0ZPX6ZAb1tRL9sEZ58W8Hc/speakwell-lofi?node-id=0-1&amp;embed-host=share" title="Speakwell wireframe preview" loading="lazy" allowfullscreen></iframe>
-                        <a class="card-preview-stretch" href="projects/speakwell-lofi.html" aria-label="View Speakwell project"></a>
-                    </div>
-                    <p class="fidelity-pill fidelity-pill--low">Low fidelity</p>
-                    <h4>Speakwell — Corporate Communication</h4>
-                    <p>Corporate communication training app—lesson structure, practice flows, and onboarding screens in Figma.</p>
-                    <a class="card-link" href="projects/speakwell-lofi.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <div class="card-preview card-preview--figma">
-                        <iframe src="https://embed.figma.com/proto/qhhirFMXZQq0FCTD0d2YRu/MyndBodyPrototypeImproved?node-id=1-73&amp;starting-point-node-id=1%3A70&amp;embed-host=share" title="MyndBody prototype preview" loading="lazy" allowfullscreen></iframe>
-                        <a class="card-preview-stretch" href="projects/myndbody-wellness.html" aria-label="View MyndBody project"></a>
-                    </div>
-                    <p class="fidelity-pill fidelity-pill--low">Low fidelity</p>
-                    <h4>MyndBody Wellness Tracker</h4>
-                    <p>Click-through mobile prototype for daily logging, progress views, and wellness habit loops.</p>
-                    <a class="card-link" href="projects/myndbody-wellness.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--artifact" href="projects/user-research.html">
-                        <span class="artifact-type">PDF</span>
-                        <span class="artifact-title">Research synthesis &amp; analysis</span>
-                    </a>
-                    <h4>User Research</h4>
-                    <p>Research synthesis and data-informed recommendations.</p>
-                    <a class="card-link" href="projects/user-research.html">View full project</a>
-                </article>
-            </div>
-
-        </section>
-
-        <section id="interdisciplinary" class="section-stack">
-            <h2>Interdisciplinary Adobe Multimedia Designs</h2>
-            <p class="section-intro">Print, campaign, and communication design with full-size viewers and process notes on each project page.</p>
-            <div class="card-grid">
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--image" href="projects/newsletter-design.html">
-                        <img src="work/infosci/newsletter.png" alt="Newsletter design preview">
-                    </a>
-                    <h4>Digital Newsletter</h4>
-                    <a class="card-link" href="projects/newsletter-design.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--image" href="projects/editorial-publication.html">
-                        <img src="work/otherdes/Newspaper-EmmaEbeling.png" alt="Newspaper design sample">
-                    </a>
-                    <a class="card-link" href="projects/editorial-publication.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--image" href="projects/book-cover-design.html">
-                        <img src="work/otherdes/EmmaEbeling.BookCover.png" alt="Book cover design sample">
-                    </a>
-                    <h4>Book Cover</h4>
-                    <a class="card-link" href="projects/book-cover-design.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--image" href="projects/digital-campaign-graphics.html">
-                        <img src="work/otherdes/SocialMediaPost-EmmaEbeling.png" alt="Social media graphic sample">
-                    </a>
-                    <h4>Digital Campaign Graphics</h4>
-                    <a class="card-link" href="projects/digital-campaign-graphics.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--image" href="projects/information-visualization.html">
-                        <img src="work/otherdes/PieChart-Ebeling.png" alt="Pie chart design sample">
-                    </a>
-                    <h4>Information Visualization</h4>
-                    <a class="card-link" href="projects/information-visualization.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--image" href="projects/branding-print-visuals.html">
-                        <img src="work/otherdes/MagCoverEmmaEbeling.jpg" alt="Magazine cover sample">
-                    </a>
-                    <h4>Branding and Print Visuals</h4>
-                    <a class="card-link" href="projects/branding-print-visuals.html">View full project</a>
-                </article>
-                <article class="project-card glass">
-                    <a class="card-preview card-preview--artifact" href="projects/menu-design-print.html">
-                        <span class="artifact-type">PDF</span>
-                        <span class="artifact-title">Print Menu</span>
-                    </a>
-                    <h4>Print Menu Design</h4>
-                    <p>Layout .</p>
-                    <a class="card-link" href="projects/menu-design-print.html">View full project</a>
-                </article>
-            </div>
-        </section>
-
-        <section id="visual-communication" class="section-stack">
-            <h2>Graphic and Digital Design</h2>
-            <p class="section-intro">Logo systems, branding explorations, and digital design work that strengthens visual identity across screens and materials.</p>
-
-            <div class="glass section-block">
-                <h3>Logos</h3>
-                <div class="card-grid">
-                    <article class="project-card glass">
-                        <a class="card-preview card-preview--image" href="work/visgraphics/logos/EGElogo.png" target="_blank" rel="noopener noreferrer">
-                            <img src="work/visgraphics/logos/EGElogo.png" alt="EGE logo preview">
-                        </a>
-                        <h4>EGE</h4>
-                        <p>Identity logo and mark explorations.</p>
-                    </article>
-                    <article class="project-card glass">
-                        <a class="card-preview card-preview--image" href="work/visgraphics/logos/NSlogo.png" target="_blank" rel="noopener noreferrer">
-                            <img src="work/visgraphics/logos/NSlogo.png" alt="NS logo preview">
-                        </a>
-                        <h4>NS</h4>
-                        <p>Brand logo concept with a clean, modern feel.</p>
-                    </article>
-                    <article class="project-card glass">
-                        <a class="card-preview card-preview--image" href="work/visgraphics/logos/VGlogo.png" target="_blank" rel="noopener noreferrer">
-                            <img src="work/visgraphics/logos/VGlogo.png" alt="VG logo preview">
-                        </a>
-                        <h4>VG</h4>
-                        <p>Visual identity exploration built for digital-first branding.</p>
-                    </article>
-                </div>
-            </div>
-
-            <!--
-            <div class="glass section-block">
-                <h3>Art</h3>
-                <div class="card-grid">
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--coming-soon" aria-label="Coming soon">
-                            <div class="placeholder shape-circle"></div>
-                            <span class="coming-soon-label">Coming soon</span>
-                        </div>
-                        <h4>Illustration</h4>
-                        <p>Concept art, illustration studies, and visual compositions.</p>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--coming-soon" aria-label="Coming soon">
-                            <div class="placeholder shape-diamond"></div>
-                            <span class="coming-soon-label">Coming soon</span>
-                        </div>
-                        <h4>Poster Design</h4>
-                        <p>Poster and art-direction explorations for events and storytelling.</p>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--coming-soon" aria-label="Coming soon">
-                            <div class="placeholder shape-arch"></div>
-                            <span class="coming-soon-label">Coming soon</span>
-                        </div>
-                        <h4>Digital Art</h4>
-                        <p>Creative digital work blending illustration, color, and typography.</p>
-                    </article>
-                </div>
-            </div>
-
-            <div class="glass section-block">
-                <h3>Designs</h3>
-                <div class="card-grid">
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--coming-soon" aria-label="Coming soon">
-                            <div class="placeholder shape-pill"></div>
-                            <span class="coming-soon-label">Coming soon</span>
-                        </div>
-                        <h4>Marketing Graphics</h4>
-                        <p>Campaign assets and promotional visuals for digital audiences.</p>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--coming-soon" aria-label="Coming soon">
-                            <div class="placeholder shape-hex"></div>
-                            <span class="coming-soon-label">Coming soon</span>
-                        </div>
-                        <h4>Editorial Layouts</h4>
-                        <p>Type-driven designs for print and web storytelling.</p>
-                    </article>
-                    <article class="project-card glass">
-                        <div class="card-preview card-preview--coming-soon" aria-label="Coming soon">
-                            <div class="placeholder shape-plus"></div>
-                            <span class="coming-soon-label">Coming soon</span>
-                        </div>
-                        <h4>Brand Systems</h4>
-                        <p>Visual systems and design components for cohesive brand expression.</p>
-                    </article>
-                </div>
-            </div>
-            -->
-        </section>
-
-        <section id="contact" class="glass section-block">
-            <h2>Email</h2>
-            <p>
-                Reach me directly at
-                <a href="mailto:emmagrace0102@gmail.com">emmagrace0102@gmail.com</a>.
-            </p>
+            <a class="contact-link" href="mailto:emmagrace0102@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <a href="#top">EGE <span>© 2026</span></a>
+        <span>Made with intention.</span>
+    </footer>
 </body>
 </html>
